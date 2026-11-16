@@ -64,19 +64,19 @@ It transforms static documents into an interactive knowledge source through sema
 ## Architecture
 
 ```text
-                 React Frontend
-                       |
-                  FastAPI
-                       |
-       +---------------+---------------+
-       |               |               |
-   SQLite DB       ChromaDB        Groq API
-       |               |               |
-  Metadata &       Embeddings      AI Responses
-  Ownership        & Retrieval     & Analysis
-       |
-  Local File System
-  Original Documents
+                  React Frontend
+                        |
+                     FastAPI
+                        |
+        +---------------+---------------+
+        |               |               |
+     SQLite DB       ChromaDB        Groq API
+        |               |               |
+   Metadata &       Embeddings      AI Responses
+   Ownership        & Retrieval      & Analysis
+        |
+   Local File System
+   Original Documents
 ```
 
 ## RAG Workflow
@@ -94,7 +94,7 @@ It transforms static documents into an interactive knowledge source through sema
 ## Project Structure
 
 ```text
-DocuMind-AI/
+DocuMind-AI-new/
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
@@ -123,7 +123,7 @@ DocuMind-AI/
 - Python 3.10+
 - Node.js 18+
 - Git
-- Groq API key (Free Tier)
+- Groq API key (Free Tier, subject to provider limits)
 - Optional: Ollama for local LLM inference
 
 ## Installation & Setup
@@ -131,8 +131,8 @@ DocuMind-AI/
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd DocuMind-AI
+git clone https://github.com/ShravyaGPoojary/DocuMind-AI-new.git
+cd DocuMind-AI-new
 ```
 
 ### 2. Backend Setup
@@ -214,6 +214,3 @@ Implemented capabilities include:
 - Enhanced citation verification
 - Additional document intelligence capabilities
 
-## License
-
-This project is licensed under the MIT License.
